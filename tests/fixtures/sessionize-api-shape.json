@@ -1,0 +1,118 @@
+{
+	"speakers": {
+		"url": "https://sessionize.com/api/v2/jl4ktls0/view/Speakers",
+		"sha256": "1e00dd654237254258f3e030478dfaec22c221a2586f0c8dc5f39ae8c5fa5228",
+		"fetched": "2026-10-18",
+		"shape": [
+			{
+				"id": "str",
+				"firstName": "str",
+				"lastName": "str",
+				"fullName": "str",
+				"bio": "str",
+				"tagLine": "str",
+				"profilePicture": "str",
+				"sessions": [
+					{
+						"id": "int",
+						"name": "str"
+					}
+				],
+				"isTopSpeaker": "bool",
+				"links": [
+					{
+						"title": "str",
+						"url": "str",
+						"linkType": "str"
+					}
+				],
+				"questionAnswers": [],
+				"categories": []
+			}
+		]
+	},
+	"all": {
+		"url": "https://sessionize.com/api/v2/jl4ktls0/view/All",
+		"sha256": "5e85547c8d7ca25cd7db9fae17ce770c24fb8843adbf2a7212dae0def3dac22c",
+		"fetched": "2026-10-18",
+		"shape": {
+			"sessions": [
+				{
+					"id": "str",
+					"title": "str",
+					"description": "str",
+					"startsAt": "str",
+					"endsAt": "str",
+					"isServiceSession": "bool",
+					"isPlenumSession": "bool",
+					"speakers": ["str"],
+					"categoryItems": ["int"],
+					"questionAnswers": [
+						{
+							"questionId": "int",
+							"answerValue": "str"
+						}
+					],
+					"roomId": "int",
+					"liveUrl": "NoneType",
+					"recordingUrl": "NoneType",
+					"status": "str",
+					"isInformed": "bool",
+					"isConfirmed": "bool"
+				}
+			],
+			"speakers": [
+				{
+					"id": "str",
+					"firstName": "str",
+					"lastName": "str",
+					"bio": "str",
+					"tagLine": "str",
+					"profilePicture": "str",
+					"isTopSpeaker": "bool",
+					"links": [
+						{
+							"title": "str",
+							"url": "str",
+							"linkType": "str"
+						}
+					],
+					"sessions": ["int"],
+					"fullName": "str",
+					"categoryItems": [],
+					"questionAnswers": []
+				}
+			],
+			"questions": [
+				{
+					"id": "int",
+					"question": "str",
+					"questionType": "str",
+					"sort": "int"
+				}
+			],
+			"categories": [
+				{
+					"id": "int",
+					"title": "str",
+					"items": [
+						{
+							"id": "int",
+							"name": "str",
+							"sort": "int"
+						}
+					],
+					"sort": "int",
+					"type": "str"
+				}
+			],
+			"rooms": [
+				{
+					"id": "int",
+					"name": "str",
+					"sort": "int"
+				}
+			]
+		}
+	}
+}
